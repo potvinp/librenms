@@ -1,0 +1,12 @@
+os: wd-mycloudex2ultra
+text: WD My Cloud EX2 Ultra
+type: storage
+icon: wd
+group: wd
+
+# Detect by OID presence (safe even if sysObjectID is generic under 5127)
+discovery:
+  - snmpget:
+      oid: MYCLOUDEX2ULTRA-MIB::mycloudex2ultraAgentVer.0
+      op: '!='
+      value: ''

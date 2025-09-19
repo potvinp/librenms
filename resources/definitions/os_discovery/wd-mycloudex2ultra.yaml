@@ -1,0 +1,23 @@
+os: wd-mycloudex2ultra
+text: WD My Cloud EX2 Ultra
+type: storage
+icon: wd
+mib: MYCLOUDEX2ULTRA-MIB
+
+over:
+  - key: hardware
+    value: WD My Cloud EX2 Ultra
+  - key: version
+    oid: MYCLOUDEX2ULTRA-MIB::mycloudex2ultraSoftwareVersion.0
+    snmpget: true
+  - key: features
+    oid: MYCLOUDEX2ULTRA-MIB::mycloudex2ultraAgentVer.0
+    snmpget: true
+
+extra:
+  - label: Hostname
+    oid: MYCLOUDEX2ULTRA-MIB::mycloudex2ultraHostName.0
+    snmpget: true
+
+modules:
+  sensors: {}
